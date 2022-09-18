@@ -1,0 +1,23 @@
+﻿@model MVC_Login_Form.Models.LoginModel
+
+<html>
+<body>
+    @if(Model != null)
+    {
+        <p>Здраствуйте, @Model.Login!</p>
+        @if (Model.Admin == true)
+        {
+            <p>Вы админ.</p>
+        }
+        else
+        {
+            <p>Вы не админ.</p>
+        }
+    }
+    else
+    {
+        <p>Введенны некоректные данные </p>
+    }
+    <a href="/Login/Login">Назад</a>
+</body>
+</html>
