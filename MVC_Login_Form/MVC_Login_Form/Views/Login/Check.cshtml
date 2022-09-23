@@ -4,20 +4,20 @@
 <body>
     @if(Model != null)
     {
-        <p>Здраствуйте, @Model.Login!</p>
+        <p>Hello, @Model.Login!</p>
         @if (Model.Admin == true)
         {
-            <p>Вы админ.</p>
+            <p>You are administrator.</p>
         }
         else
         {
-            <p>Вы не админ.</p>
+            <p>You are user.</p>
         }
     }
     else
     {
-        <p>Введенны некоректные данные </p>
+        <p>Invalid login or password.</p>
     }
-    <a href="/Login/Login">Назад</a>
+    <a href="/Login/Login">Back to login form</a>
 </body>
 </html>
